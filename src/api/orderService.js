@@ -1,6 +1,6 @@
 // src/services/orderService.js
 
-const ORDERS_API_URL = import.meta.env.VITE_API_URL || 'http://3.110.92.192:5000/api';
+const ORDERS_API_URL = import.meta.env.VITE_API_URL || 'https://backend.10xdrink.com/api';
 
 /**
  * List of allowed order statuses as per backend definitions.
