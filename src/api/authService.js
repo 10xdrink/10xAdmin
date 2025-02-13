@@ -1,6 +1,6 @@
 // src/api/authService.js
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://3.110.92.192:5000/api/auth';
+const API_URL = import.meta.env.VITE_API_URL || 'https://backend.10xdrink.com/api/auth';
 
 const authService = {
   /**
