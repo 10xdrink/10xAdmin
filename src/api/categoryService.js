@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://3.110.92.192:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://backend.10xdrink.com/api';
 
 // Create an axios instance with the base URL for categories
 const axiosInstance = axios.create({
