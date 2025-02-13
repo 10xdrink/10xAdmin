@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 // Define the API URL directly to avoid 'process is not defined' error
-const API_URL = 'http://3.110.92.192:5000/api'; // Replace with your actual API URL
+const API_URL = 'https://backend.10xdrink.com/api'; // Replace with your actual API URL
 
 // Create an Axios instance for reviews
 const axiosInstance = axios.create({
