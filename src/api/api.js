@@ -4,7 +4,7 @@ import axios from 'axios';
 
 // Create an Axios instance
 const api = axios.create({
-  baseURL: 'http://3.110.92.192:5000/api', // Replace with your backend API base URL
+  baseURL: 'https://backend.10xdrink.com/api', // Replace with your backend API base URL
   headers: {
     'Content-Type': 'application/json',
   },
