@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-poppins text-deep-navy bg-light-grey;
+  }
+  
+  h1, .h1 {
+    @apply font-quantico italic tracking-wide uppercase text-deep-navy;
+  }
+  
+  h2, .h2, h3, .h3 {
+    @apply font-bold uppercase text-deep-navy;
+  }
+  
+  h4, .h4, h5, .h5 {
+    @apply font-pt-sans font-bold text-deep-navy;
+  }
+  
+  p, .body {
+    @apply font-pt-sans text-deep-navy;
+  }
+}
+
+@layer components {
+  /* Card styles */
+  .dashboard-card {
+    @apply bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow;
+  }
+  
+  /* Button styles */
+  .btn-primary {
+    @apply bg-gradient-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-opacity;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-primary-blue border border-primary-blue px-4 py-2 rounded-md text-sm font-medium hover:bg-primary-blue/5 transition-colors;
+  }
+  
+  /* Status indicators */
+  .status-badge {
+    @apply px-2.5 py-1 inline-flex text-xs leading-5 font-semibold rounded-full;
+  }
+  
+  .status-badge-success {
+    @apply bg-green-100 text-green-800;
+  }
+  
+  .status-badge-warning {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+  
+  .status-badge-danger {
+    @apply bg-red-100 text-red-800;
+  }
+  
+  .status-badge-info {
+    @apply bg-blue-100 text-blue-800;
+  }
+  
+  /* Animation Classes */
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+  
+  .animate-slideDown {
+    animation: slideDown 0.3s ease-out forwards;
+  }
+  
+  .animate-slideUp {
+    animation: slideUp 0.3s ease-out forwards;
+  }
+  
+  .animate-scale {
+    animation: scale 0.3s ease-out forwards;
+  }
+  
+  .animate-pulse {
+    animation: pulse 2s infinite;
+  }
+}
+
+@layer utilities {
+  /* Glass effect */
+  .glass-effect {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm;
+  }
+  
+  /* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-gray-100 rounded-full;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full hover:bg-gray-400;
+  }
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scale {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.3s ease-out forwards;
+}

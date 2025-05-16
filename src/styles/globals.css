@@ -1,0 +1,235 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* src/styles/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  font-family: "Poppins", sans-serif;
+
+}
+
+.main-navi {
+  height: 60px; /* Adjust the height according to your needs */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding: 0 20px; /* Adjust the padding for spacing */
+}
+
+.mega-menu {
+  background: linear-gradient(360deg, #000000 0%, #0821d2 100%);
+}
+
+.faq-hero {
+  background: linear-gradient(360deg, #000000 0%, #0821d2 100%);
+}
+
+.blog-card-bg {
+  background: linear-gradient(180deg, #ffffff 0%, #e6e6e6 100%);
+}
+
+.login-button {
+  background: linear-gradient(90deg, #000000 0%, #0821d2 100%);
+}
+
+.join-the-email-list {
+  background-color: #061053;
+}
+
+.horizontal {
+  height: 2px;
+}
+
+/* Roboto Fonts */
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* PT Sans */
+
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* font-size: 14px; */
+}
+
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-sans-regular-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-sans-bold-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Quantico */
+
+.quantico-regular {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quantico-bold {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quantico-regular-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.quantico-bold-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Nimbus;
+  src: url(/NimbusSanL-Bol.otf);
+}
+
+.nimbusL-bol {
+  font-family: Nimbus;
+}
+
+.MangoHero {
+  height: 700px;
+  rotate: 20deg;
+}
+
+.LimeHero {
+  height: 700px;
+  margin: -80px;
+  rotate: -20deg;
+}
+
+
+/* Styling for the checkbox container */
+input[type="checkbox"] {
+  display: grid;
+  place-content: center;
+  appearance: none; /* Removes default styling */
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #e27e10; /* Indigo color */
+  border-radius: 0.25rem; /* Optional for rounded corners */
+  outline: none;
+  cursor: pointer;
+  background-color: #fff; /* Default background */
+  transition: background-color 120ms ease-in-out, border-color 120ms ease-in-out;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  background-color: #e27e10; /* Indigo color */
+  transition: transform 120ms ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color, #e27e10);
+  border-radius: 0.25rem; /* Optional for rounded tick */
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:hover {
+  border-color: #e27e10; /* Darker indigo for hover effect */
+}
+
+input[type="checkbox"]:focus {
+  border-color: #e27e10; /* Focus state color */
+  box-shadow: 0 0 0 2px #c7d2fe; /* Light blue outline for focus */
+}
